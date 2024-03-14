@@ -1,0 +1,37 @@
+
+### Info
+GET http://localhost:3001/api
+
+### Users
+GET http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "token": "de340c78-2f71-4745-95cc-9dae74469b7d"
+}
+
+### Get user
+GET http://localhost:3001/api/users/usuario3
+Content-Type: application/json
+
+{
+  "token": "de340c78-2f71-4745-95cc-9dae74469b7d"
+}
+
+### Login
+POST http://localhost:3001/api/users/login
+Content-Type: application/json
+
+{
+  "username": "usuario1",
+  "password": "contraseña1"
+}
+
+### Logout
+DELETE http://localhost:3001/api/users/logout
+Content-Type: application/json
+
+{
+  "username": "usuario1",
+  "token": "de340c78-2f71-4745-95cc-9dae74469b7d"
+}
